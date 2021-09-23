@@ -44,7 +44,6 @@ public class AdminService extends ClientService {
 	}
 
 	public void updateCompany(Company company) throws CouponSystemException {
-//		Company temp = this.companyR.getByName(company.getName());
 		Company temp = this.companyR.getById(company.getId());
 		if (temp != null) {
 			temp.setName(company.getName());
